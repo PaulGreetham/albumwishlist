@@ -4,7 +4,7 @@ import './Title.css';
 function Title() {
   return (
     <div className="title">
-      <h1>Album Wishlist</h1>
+      <h1>ALBUM WISHLIST</h1>
     </div>
   );
 }

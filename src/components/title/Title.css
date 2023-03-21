@@ -1,7 +1,23 @@
 .title {
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 3rem;
+  text-align: center;
+  border: 10px solid black;
+  border-radius: 1px;
+  padding: 1rem;
+  transition: 1s;
 }
+
+.title:hover {
+  box-shadow: 24px 24px rgb(236, 236, 0);
+  transition: 1s;
+  background-color: gray;
+  transition: 1s;
+  color: white;
+  transform: translateY(-10px);
+}
+
 
 @media screen and (min-width: 768px) {
   .title {

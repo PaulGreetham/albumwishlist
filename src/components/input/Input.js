@@ -14,6 +14,8 @@ function Input(props) {
 
   return (
     <form onSubmit={handleSubmit} className="input">
+      <h2>How to use Album Wishlist</h2>
+      <p>Add the music albums you want to your own list.<br></br>You can then toggle them as 'Buy Me' or 'Bought'.<br></br>You can then delete them from your list.</p>
       <div>
         <input type="text" value={artist} onChange={(event) => setArtist(event.target.value)} placeholder="Artist" />
       </div>

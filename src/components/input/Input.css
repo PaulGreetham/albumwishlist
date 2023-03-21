@@ -6,7 +6,7 @@
   padding: 3rem;
   margin-bottom: 3rem;
   font-family: 'Raleway', sans-serif;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .input h2 {
@@ -28,8 +28,8 @@
 
 .input:hover {
   box-shadow: 24px 24px yellow;
-  transition: 1s;
-  transform: translateY(-10px);
+  transition: 0.5s;
+  transform: translateY(-5px);
 }
 
 .form-group {
@@ -64,13 +64,13 @@ button[type="submit"] {
   cursor: pointer;
   margin-top: 1rem;
   border: none;
-  transition: 1s;
+  transition: 0.5s;
   font-family: 'Raleway', sans-serif;
 }
 
 button[type="submit"]:hover {
   background-color: rgb(118, 0, 118);
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 500px) {

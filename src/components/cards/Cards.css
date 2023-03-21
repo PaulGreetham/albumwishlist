@@ -1,7 +1,7 @@
 .cards {
   display: flex;
   flex-direction: column;
-  transition: 1s;
+  transition: 0.5s;
   margin-bottom: 3rem;
 }
 
@@ -20,8 +20,8 @@
 
 .card:hover {
   box-shadow: 24px 24px yellow;
-  transition: 1s;
-  transform: translateY(-10px);
+  transition: 0.5s;
+  transform: translateY(-5px);
 }
 
 .card--bought {
@@ -33,7 +33,7 @@
 .card--bought .card__buttons button {
   background-color: white;
   color: black;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 .card--bought .card__buttons button:hover {
@@ -43,7 +43,7 @@
 
 .card--bought:hover {
   box-shadow: -24px 0px 0px 9px rgb(118, 0, 118, 0.5);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .card__content {
@@ -52,7 +52,7 @@
   align-items: center;
   margin: 1rem;
   flex: 1;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .card__content h3 {
@@ -78,14 +78,14 @@
   border: none;
   cursor: pointer;
   margin: 1rem;
-  transition: 0.2s;
+  transition: 0.5s;
   width: 12rem;
 }
 
 .card__buttons button:hover {
   background-color: rgb(118, 0, 118);
   color: white;
-  transition: 1s;
+  transition: 0.5s;
   align-items: center;
 }
 

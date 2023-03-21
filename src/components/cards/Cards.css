@@ -92,3 +92,14 @@
 .toggle-button {
   transition: 0.5s;
 }
+
+@media screen and (max-width: 500px) {
+  .card__buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: 0.5s;
+  }
+}

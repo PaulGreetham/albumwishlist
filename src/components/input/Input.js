@@ -14,8 +14,12 @@ function Input(props) {
 
   return (
     <form onSubmit={handleSubmit} className="input">
-      <input type="text" value={artist} onChange={(event) => setArtist(event.target.value)} placeholder="Artist" />
-      <input type="text" value={albumTitle} onChange={(event) => setAlbumTitle(event.target.value)} placeholder="Album Title" />
+      <div>
+        <input type="text" value={artist} onChange={(event) => setArtist(event.target.value)} placeholder="Artist" />
+      </div>
+      <div>
+        <input type="text" value={albumTitle} onChange={(event) => setAlbumTitle(event.target.value)} placeholder="Album Title" />
+      </div>
       <button type="submit">Add Album</button>
     </form>
   );

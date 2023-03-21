@@ -1,16 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './Cards.css';
-import Input from '../input/Input';
 
-function Cards() {
-  const [albumList, setAlbumList] = useState([]);
-
+function Cards({ albumList, setAlbumList }) {
   useEffect(() => {
     const albums = JSON.parse(localStorage.getItem('albums') || '[]');
     if (albums) {
       setAlbumList(albums);
     }
-  }, []);
+  }, [setAlbumList]);
 
   useEffect(() => {
     localStorage.setItem('albums', JSON.stringify(albumList));
@@ -34,23 +31,8 @@ function Cards() {
     setAlbumList((prevAlbumList) => prevAlbumList.filter((album) => album.id !== id));
   };
 
-  const handleAddAlbum = (artist, albumTitle) => {
-    if (artist && albumTitle) {
-      setAlbumList((prevAlbumList) => [
-        ...prevAlbumList,
-        {
-          id: Date.now(),
-          artist: artist,
-          albumTitle: albumTitle,
-          bought: false,
-        },
-      ]);
-    }
-  };
-
   return (
     <div className="cards">
-      <Input onSubmit={handleAddAlbum} />
       <div className="cards__list">
         {albumList.map((album) => (
           <div key={album.id} className={`card ${album.bought ? 'card--bought' : ''}`}>

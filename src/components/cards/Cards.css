@@ -5,6 +5,9 @@
 
 .cards__list {
   margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .card {

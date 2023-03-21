@@ -43,7 +43,7 @@ function Cards({ albumList, setAlbumList }) {
               </div>
               <div className="card__buttons">
                 <button onClick={() => handleToggle(album.id)}>
-                  {album.bought ? 'Bought' : 'Buy Me'}
+                  {album.bought ? 'You Bought Me' : 'Buy Me'}
                 </button>
                 <button onClick={() => handleDelete(album.id)}>Delete</button>
               </div>

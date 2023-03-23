@@ -14,7 +14,7 @@
 }
 
 .title:hover {
-  box-shadow: 24px 24px rgb(236, 236, 0);
+  box-shadow: 24px 24px yellow;
   transition: 0.5s;
   background-color: gray;
   transition: 1s;

@@ -19,7 +19,7 @@
 }
 
 .card:hover {
-  box-shadow: 24px 24px yellow;
+  box-shadow: 16px 16px yellow;
   transition: 0.5s;
   transform: translateY(-5px);
 }
@@ -42,7 +42,7 @@
 }
 
 .card--bought:hover {
-  box-shadow: -24px 0px 0px 9px rgb(118, 0, 118, 0.5);
+  box-shadow: -16px 0px 0px 9px rgb(118, 0, 118, 0.5);
   transition: 0.5s;
 }
 
